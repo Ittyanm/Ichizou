@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+/* ↓ BREAKPOINT ↓ */
+/* Display only */
+@media only screen and (max-width: 1024px) {}
+
+/* Tablet only */
+@media only screen and (max-width: 768px) {}
+
+/* Smartphone only */
+@media only screen and (max-width: 480px) {}
+
+/* ↑ BREAKPOINT ↑ */
+
+/* ↓ LAYOUT ↓ */
+.container .message,
+.container .careers,
+.container .avatar{
+  padding: 40px 12px;
+}
+.container h2,
+.container h3,
+.container p{
+  margin: 16px 0 0;
+}
+/* Tablet only */
+@media only screen and (max-width: 768px) {
+  .container .message,
+  .container .careers,
+  .container .avatar{
+    padding: 20px 0;
+  }
+  .container h2,
+  .container h3,
+  .container p{
+    margin: 8px 0 0;
+  }
+}
+/* ↑ LAYOUT ↑ */
+
+header .self-introduction {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 36px;
+  line-height: 3.6rem;
+  letter-spacing: 0;
+  margin-top: 45px;
+  margin-top: 4.5rem;
+}
+
+header .top-title {
+  font-size: 120px;
+  font-size: 12rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 132px;
+  line-height: 13.2rem;
+  letter-spacing: 0;
+  margin-bottom: 60px;
+  margin-bottom: 6.0rem;
+}
+
+header .title {
+  font-size: 30px;
+  font-size: 3rem;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  line-height: 48px;
+  line-height: 4.8rem;
+  letter-spacing: 0;
+  margin-bottom: 30px;
+  margin-bottom: 3.0rem;
+}
+
+header .sentence {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 36px;
+  line-height: 3.6rem;
+  letter-spacing: 0;
+  margin-bottom: 60px;
+  margin-bottom: 6.0rem;
+}
+
+/* font-smartphone only */
+
+@media only screen and (max-width: 768px) {
+  header .top-title {
+    font-size: 50px;
+    font-size: 5rem;
+    line-height: 55px;
+    line-height: 5.5rem;
+    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
+  }
+
+  header .title {
+    font-size: 25px;
+    font-size: 2.5rem;
+    line-height: 40px;
+    line-height: 4.0rem;
+    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
+  }
+
+  header .sentence {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+
+  .container .work-theme {
+    font-size: 25px;
+    font-size: 2.5rem;
+    line-height: 40px;
+    line-height: 4.0rem;
+    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
+  }
+}
+/* ↓ MESSAGE ↓ */
+.message p{
+  text-align: left;
+}
+.message ol{
+  list-style-position: inside;
+  list-style-type: disc;
+}
+.message ol li {
+  min-width: 244px;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: left;
+}
+/* Tablet only */
+@media only screen and (max-width: 768px) {
+  .message ol li {
+    font-size: 12px;
+    line-height: 36px;
+  }
+}
+
+/* ↑ MESSAGE ↑ */
+
+/* ↓ CAREERS ↓ */
+.career {
+  border-bottom: 2px solid #dddddd;
+}
+
+.career ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.career ol li {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 244px;
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.career-employer,
+.career-title {
+  text-align: left;
+}
+
+.career-period {
+  text-align: right;
+}
+
+/* Tablet only */
+@media only screen and (max-width: 768px) {
+  .career ol {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .career ol li {
+    font-size: 12px;
+    line-height: 36px;
+  }
+  .career-period {
+    text-align: left;
+  }
+}
+
+/* ↑ CAREERS ↑ */
+/* ↓ AVATAR ↓ */
+.avatar-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background: #e2e2e2 url(../img/about/about-image01.jpg) 32% 32% / 152% no-repeat;
+  margin: 0 auto;
+}
+
+/* Tablet only */
+@media only screen and (max-width: 768px) {
+  .avatar-icon {
+
+  }
+}
+
+/* ↑ AVATAR ↑ */
